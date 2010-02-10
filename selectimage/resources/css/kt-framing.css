@@ -1,0 +1,2439 @@
+/* ------------------ generic ------------------ */
+
+html {
+    height: 100%;
+}
+
+body
+{
+    /*padding: 1em ; */
+    border: 0;
+    margin: 0;
+    font-size: smaller;
+    font-family: sans-serif;
+}
+
+.floatClear
+{
+    clear: both;
+    height: 1px !important;
+    margin: 0; border: 0; padding: 0;
+    width: 1px;
+}
+
+#kt-wrapper
+{
+    /*margin-top: 15px;*/
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.copyright {
+    /*margin-top: 1em;*/
+    color: #888;
+    font-size: smaller;
+    border-top: 1px solid #ccc;
+}
+
+.action_overview_scroll {
+	border:1px ;
+	overflow: auto;
+	width: 80%;
+	min-height: 200px;
+	position: relative;
+	top:100px;
+	left:100px;
+}
+
+#pageBody {
+    /*margin-top: 20px;*/
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 20px;*/
+    min-height: 750px;
+    min-width: 600px;
+    height: auto;
+    /*background: url(../../resources/graphics/page_bg.gif) repeat-x;*/
+    z-index: 0;
+}
+
+#bodyPad {
+   /*margin-top:15px;*/
+   margin-left:10px;
+   margin-right:10px;
+}
+
+#wrapper {
+	min-width: 750px;
+}
+/* ------------------ logobar ------------------ */
+
+#logobar
+{
+    position: relative;
+    width: 100%;
+    margin: 0.2em 0 0.5em 0;
+}
+
+#logobar .secondary
+{
+    float: right;
+    border: 0;
+}
+
+#logobar .primary
+{
+    float: left;
+    border: 0;
+}
+
+/* ------------------ navbar ------------------- */
+
+#navbarBorder {
+    position: relative;
+    height: 2.36em;
+    width: 99%;
+}
+
+#navbarLeft {
+    position: absolute;
+    background: url(../../resources/graphics/menu_corner_left.png) top left no-repeat;
+    width:8px;
+    height:2.36em;
+    top:0px;
+    left:0px;
+}
+
+#navbarRight {
+    position: absolute;
+    background: url(../../resources/graphics/menu_corner_right.png) top right no-repeat;
+    width:8px;
+    height:2.36em;
+    top:0px;
+    right:0px;
+}
+
+#navbar
+{
+    position: relative;
+    width: auto;
+    background: url(../../resources/graphics/menubg.png) top left repeat-x;
+    padding: 0em 1em;
+    margin-bottom: 1em;
+    height: 2.36em;
+    overflow: hidden;
+    top:0px;
+}
+
+#navbar ul
+{
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#navbar ul li
+{
+    padding: 0.5em 0.75em;
+    display: block;
+    float: left;
+    color: white;
+}
+
+#navbar ul li.pref
+{
+    float: right;
+}
+
+#navbar ul li.active {
+    background: #6c8c2f url(../../resources/graphics/menubg-active.png) top left repeat-x;
+    height: 1.4em;
+}
+
+#navbar ul li a
+{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px transparent;
+}
+
+#navbar ul li a:hover
+{
+    border-bottom: 1px solid white;
+}
+
+#menu_divider {
+    background: url(../../resources/graphics/menu_divider.png) top left no-repeat;
+    width: 2px;
+    height: 31px;
+}
+
+.ktLoggedInUser {
+    font-weight: bold;
+}
+
+/*
+a.main_nav_item {
+    background: transparent url(../../resources/graphics/home-navbar.gif) center left no-repeat;
+    padding-left: 1.5em;
+}
+*/
+#navbar ul li.active a:hover,
+#navbar ul li.active a
+{
+    font-weight: bold;
+
+}
+
+/* ------------------ breadcrumbs -------------- */
+
+#breadcrumbs
+{
+    margin-top: 0.2em;
+    /*margin-bottom: 1em;*/
+    margin-left: 0.5em;
+    color: #333;
+    text-transform: lowercase;
+}
+
+#breadcrumbs .primary
+{
+    font-weight: bold;
+}
+
+#breadcrumbs .additional
+{
+    color: #888;
+}
+
+#breadcrumbs a
+{
+    color: #344a6a;
+    text-decoration: none;
+    border-bottom: 1px solid #344a6a;
+
+}
+
+#breadcrumbs a:hover
+{
+    color: #9d0a0a;
+    text-decoration: none;
+    border-bottom: 1px solid #9d0a0a;
+}
+
+/* ------------------ portlets ----------------- */
+
+#portletbar
+{
+    float: left;
+    width: 16em;
+    left: 1em;
+    background: transparent;
+    margin: 0 10px 0 0 ;
+    padding: 0;
+    z-index: 2;  /*  IE layers this below the content bar. */
+}
+
+/* horrible, custom dashboard hack. */
+.noportlets #portletbar { display: none; }
+
+#portletbar .portlet {
+    position: relative;
+    margin: 0 0 1.5em 0;
+    background: url(../../resources/graphics/portlet_corner_topleft_collapsed.png) top left no-repeat;
+    padding: 0 0 0 0;
+    border: 0;
+    z-index: 2;
+}
+
+#portletbar .portlet .portletTopRepeat {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_bg_collapsed.png) top left repeat-x;
+    top: 0;
+    left: 30px;
+    height: 30px;
+    width: 80%;
+    z-index: -1;
+    border:0;
+}
+
+#portletbar .portlet .portletTopRight {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_corner_topright_collapsed.png) top right no-repeat;
+    top: 0;
+    right: 0px;
+    height: 30px;
+    width: 60%;
+    z-index: -1;
+    border: 0;
+}
+
+#portletbar .portlet.expanded {
+    position: relative;
+    margin: 0 0 1.5em 0;
+    padding: 0 0 0 0;
+    background: url(../../resources/graphics/portlet_corner_topleft.png) top left no-repeat;
+    border: 0;
+    z-index: 2;
+}
+
+#portletbar .portlet.expanded .portletTopRepeat {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_bg.png) top left repeat-x;
+    top: 0px;
+    left: 30px;
+    height: 28px;
+    width: 80%;
+    z-index: -1;
+    border: 0;
+}
+
+#portletbar .portlet.expanded .portletTopRight {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_corner_topright.png) top right no-repeat;
+    top: 0;
+    right: 0px;
+    height: 28px;
+    width: 60%;
+    z-index: -1;
+    border: 0;
+}
+
+#portletbar .portlet .portletbody {
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    padding: 0 0 1em 0;
+    margin-right: 1px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 99%;
+    height: 100%;
+}
+
+/* Attempt to contain side portlet containers in MORE containers*/
+/*
+#portletbar .portlet.expanded .portletBodyDoubleTop {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    top:0px;
+    right:0px;
+    border: 1px solid red;
+}
+
+#portletbar .portlet.expanded .portletBodyDoubleMiddle {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    top:0px;
+    right:0px;
+    border: 1px solid blue;
+}
+
+#portletbar .portlet.expanded .portletBodyDoubleBottom {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    bottom:0px;
+    right:0px;
+    border: 1px solid red;
+}*/
+
+/* Bottom Portlet borders */
+/*
+#portletbar .portlet .portletbodyBottomLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background: url(../../resources/graphics/portlet_corner_bottomleft.png) bottom left no-repeat;
+}
+
+#portletbar .portlet .portletbodyBottomRight {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    background: url(../../resources/graphics/portlet_corner_bottomright.png) bottom right no-repeat;
+}
+
+#portletbar .portlet .portletbodyBottom {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    height: 3px;
+    width: 95%;
+    background: url(../../resources/graphics/portlet_borderbottom.png) bottom left repeat-x;
+}*/
+
+/* Right-hand side portlet borders */
+/*
+#portletbar .portlet .portletbodyRightTop {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    top: 0px;
+    right: 0px;
+    width: 5px;
+    height: 76px;
+}
+
+#portletbar .portlet .portletbodyRightBottom {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    bottom: 0px;
+    right: 0px;
+    width: 5px;
+    height: 80px;
+}
+
+
+#portletbar .portlet .portletbodyRightMiddleTop {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    top: 50%;
+    right: 0px;
+    width: 5px;
+    height: 36px;
+}
+
+#portletbar .portlet .portletbodyRightMiddleBottom {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    bottom: 50%;
+    right: 0px;
+    width: 5px;
+    height: 63px;
+}
+
+#portletbar .portlet .portletbodyRightQuartTop {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    top: 15%;
+    right: 0px;
+    width: 5px;
+    height: 60px;
+}
+
+#portletbar .portlet .portletbodyRightQuartBottom {
+    position: absolute;
+    background: url(../../resources/graphics/portlet_borderright.png) top right repeat-y;
+    bottom: 25%;
+    right: 0px;
+    width: 5px;
+    height: 68px;
+}*/
+
+#portletbar .portlet a {
+	color: #344a6a;
+    text-decoration: none;
+}
+
+#portletbar .portlet a:hover {
+    color: #9d0a0a;
+    text-decoration: underline;
+}
+
+#portletbar .portlet h4:hover {
+    text-decoration: underline;
+}
+
+#portletbar .portlet h4
+{
+	margin: 0;
+    padding-top: 0.35em;
+    padding-bottom: 0.7em;
+    padding-left: 30px;
+    background: url(../graphics/plus.gif) 10px 45% no-repeat;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: small;
+}
+
+#portletbar .portlet.expanded h4
+{
+    margin: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding-top: 0.35em;
+    padding-bottom: 0.50em;
+    padding-left: 30px;
+    text-align: left;
+    background: url(../graphics/minus.gif) 10px 45% no-repeat;
+    color: #FFFFFF;
+    font-size: small;
+}
+
+#portletbar .portlet .portletbody {
+    display: none;
+}
+
+#portletbar .portlet.expanded .portletbody {
+    display: block;
+}
+
+#portletbar .portlet .portletbodyRightTop {
+    display: none;
+}
+
+#portletbar .portlet .portletbodyRightBottom {
+    display: none;
+}
+
+#portletbar .portlet .portletbodyRightMiddleTop {
+    display: none;
+}
+
+#portletbar .portlet .portletbodyRightMiddleBottom {
+    display: none;
+}
+
+#portletbar .portlet .portletbodyRightQuartTop {
+    display: none;
+}
+
+#portletbar .portlet .portletbodyRightQuartBottom {
+    display: none;
+}
+
+
+#portletbar .portlet.expanded .portletbodyRightTop {
+    display: block;
+}
+
+#portletbar .portlet.expanded .portletbodyRightBottom {
+    display: block;
+}
+
+
+#portletbar .portlet.expanded .portletbodyRightMiddleTop {
+    display: block;
+}
+
+#portletbar .portlet.expanded .portletbodyRightMiddleBottom {
+    display: block;
+}
+
+#portletbar .portlet.expanded .portletbodyRightQuartTop {
+    display: block;
+}
+
+#portletbar .portlet.expanded .portletbodyRightQuartBottom {
+    display: block;
+}
+
+
+#portletbar .portlet .actionlist
+{
+    list-style: none;
+    padding: 10px; margin: 0; border: 0;
+    font-size: small;
+}
+
+#portletbar .portlet .actionlist li.active {
+    font-weight: bold;
+}
+
+#portletbar .portlet .actionlist li {
+    display: block;
+    padding: 0 0 0 10px;
+    margin: 0.5em 0.5em 0.15em 0;
+    text-align:left;
+    background: transparent url(../graphics/leftbullet.png) center left no-repeat;
+}
+
+/* ------------------ c0.5ontent ------------------ */
+
+#content
+{
+    display: block;
+    top: 0;
+    z-index: 1;
+    width:auto;
+    /*padding: 0 2em 1em 0;
+    overflow: auto;*/
+    /*padding: 0.25em 2em 0em 0em;*/
+    overflow: hidden;
+    min-height: 400px;
+}
+
+#content.view.withviewlets {
+    padding-right: 21em;
+}
+
+.noportlets #content {
+    padding-left: 0;
+}
+
+#content h1
+{
+    display: none;
+}
+
+#content
+{
+    line-height: 1.6em;
+}
+
+
+
+#content a
+{
+    color: #344a6a;
+    text-decoration: none;
+    border-bottom: 1px solid #344a6a;
+
+}
+
+#content a:hover
+{
+    color: #9d0a0a;
+    text-decoration: none;
+    border-bottom: 1px solid #9d0a0a;
+}
+
+#content .descriptiveText
+{
+    color: #666;
+}
+
+#content .descriptiveText.important {
+    padding-left: 25px;
+    color: black;
+    background: transparent  url(../../thirdparty/icon-theme/16x16/status/dialog-information.png) center left no-repeat;
+}
+
+
+
+/* --------------------- control panels -------------------- */
+.panel_menu dt
+{
+    border-bottom: 1px solid #eee;
+    font-weight: normal;
+}
+
+
+.panel_menu dd
+{
+    margin-bottom: 1em;
+}
+
+/* ----------------------- forms ---------------------------- */
+
+#content fieldset
+{
+    border: 1px solid #ccc;
+    padding: 1em;
+    background-color: white;
+}
+
+#content fieldset legend
+{
+    font-weight: normal;
+    padding: 0 1em;
+    color: black;
+}
+
+#content input,
+#content select,
+#content textarea {
+    background:#FFFFFF url(../../thirdpartyjs/extjs/resources/images/default/form/text-bg.gif) repeat-x scroll 0 0;
+	border:1px solid #B5B8C8;
+	padding:2px 3px;
+}
+
+#content .form_actions input
+{
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+    color: #333;
+    font-weight: normal;
+}
+
+.form_actions .form_cancel {
+    margin-left: 2em;
+}
+
+/* unframed (single button) forms */
+#content .noframe fieldset
+{
+   border-width: 0px;
+   padding: 0;
+}
+
+#content .noframe .form_actions
+{
+   margin-top: 0;
+}
+
+/* old cancel style */
+
+#content a.ktCancelLink {
+    border: 1px solid #888;
+    background: #eee;
+    color: black;
+    font-weight: normal;
+    font-size: 90%;
+    padding: 2px 0.65em 1px 0.65em;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+#content a.ktCancelLink:hover {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #888;
+    cursor: default;
+}
+
+#content .field
+{
+    margin-bottom: 1.5em;
+}
+
+#content .field.error
+{
+    padding: 0.5em 1em;
+    border: 1px solid #ffc21e;
+    background: #ffdd80;
+}
+#content .field.error .errorMessage
+{
+    display: block;
+}
+
+#content .field.error label .required
+{
+    color: #ffdd80;
+}
+
+#content .field label
+{
+    display: block;
+    font-weight: bold;
+}
+
+#content .field .descriptiveText
+{
+    margin: 0;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+#content .field label .required
+{
+    margin-left: 0.5em;
+    padding-left: 10px;
+    color: white;
+    background: transparent url(../../resources/graphics/required.png) center left no-repeat;
+}
+
+.errorMessage
+{
+    font-weight: bold;
+}
+
+#content .field .errorMessage
+{
+    display: none;
+}
+
+#content .form_actions {
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid #efefef;
+}
+
+#content .form_actions input.destructive
+{
+    border: 1px solid #ffc21e;
+    background: #ffdd80;
+}
+
+#content h2
+{
+    font-family: "Lucida Grande", Tahoma, sans-serif; /* "Bitstream Vera Sans" */
+    padding-bottom: 0.25em;
+    border-width: 0 0 0 0;
+    border-style: solid;
+    border-color: #eee;
+    font-size: large;
+    color: #333;
+}
+
+#content .actionitem {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#content .actionmessage
+{
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed #ccc;
+    margin-left: 0;
+    padding-left: 2em;
+}
+
+/* ---------------------- detail view ---------------------------------- */
+
+/* metadata display */
+.metadata dt
+{
+    font-weight: bold;
+    /*this seems to force a huge space above the container in firefox*/
+    /*clear: left;*/
+}
+
+.metadata.versioned dd div {
+
+    padding: 0.2em 0.5em;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px 1px 1px 0;
+}
+
+.metadata.versioned dd .previous {
+    width: 35%;
+    float: left;
+    display: block;
+    background: #eee;
+}
+.metadata.versioned dd .current {
+    width: 35%;
+    float: left;
+    display: block;
+    border-width: 1px;
+}
+.metadata.versioned dd .current.different {
+    background-color: #fff2b8;
+/*
+    padding-left: 25px;
+    background: transparent  url(../../thirdparty/icon-theme/16x16/status/dialog-information.png) center left no-repeat;
+*/
+}
+
+.metadata.versioned dd .previous.different {
+    background-color: #e9dda8;
+/*
+    padding-left: 25px;
+    background: transparent  url(../../thirdparty/icon-theme/16x16/status/dialog-information.png) center left no-repeat;
+*/
+}
+
+/*  --- table version --- */
+
+.metadatatable {
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #ccc;
+    width: 100%;
+}
+
+.metadatatable.narrow {
+    width: auto !important;
+}
+
+.metadatatable .first th,
+.metadatatable .first td {
+    border-top: 1px solid #ccc;
+}
+
+.metadatatable th {
+    text-align: left;
+    width: 30% !important;
+    border-bottom: 1px dotted #ccc;
+    vertical-align: top;
+    padding: 0.5em;
+    background-color: #eee;
+    font-weight: normal;
+}
+
+.metadatatable td {
+    border-bottom: 1px dotted #ccc;
+    vertical-align: top;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.metadatatable .versioned td {
+    width: 35%;
+}
+
+.metadatatable td.current.different {
+    background-color: #fff2b8;
+}
+
+.metadatatable td.previous.different {
+    background-color: #e9dda8;
+}
+
+.document_details .document_history thead th {
+    text-align: left;
+    border-bottom: 1px solid #666;
+}
+
+.document_history {
+    width: 100%;
+}
+
+.document_history th {
+    text-align: left;
+}
+
+.document_history td {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.document_history tbody .username,
+.document_history tbody .date
+{
+    white-space: nowrap;
+    padding-right: 1em;
+}
+
+.document_history tbody .action
+{
+    white-space: nowrap;
+    padding-right: 1em;
+    font-weight: bold;
+}
+
+.document_history tbody tr.odd td
+{
+    background-color: #fafafa;
+}
+
+.detail_fieldset
+{
+    display: block;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.detail_fieldset h3
+{
+    margin: 0em 0 0.25em 0;
+}
+
+
+/* ----------------------- collection view ----------------------------- */
+
+.kt_collection
+{
+    width: 100%;
+    white-space: nowrap !important;
+    border: 1px solid #ccc;
+}
+
+.kt_collection.narrow {
+    width: auto;
+}
+
+.kt_collection thead th {
+    border-bottom: 1px solid #888;
+    text-align: left;
+    white-space: normal !important;
+}
+
+.kt_collection th.sort_on.sort_asc {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    background: transparent url(../../resources/graphics/sort_asc.png) center right no-repeat;
+}
+
+.kt_collection th.sort_on.sort_desc {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    background: transparent url(../../resources/graphics/sort_desc.png) center right no-repeat;
+}
+
+.kt_collection th,
+.kt_collection td {
+    padding: 0.25em 0.5em;
+    white-space: nowrap !important;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.kt_collection td.title,
+.kt_collection td.datecolumn
+{
+    white-space: normal !important;
+}
+
+.centered, .kt_collection thead th.centered { text-align: center; }
+.centered .ktAction { margin-left: auto; margin-right: auto; width: 100%;  background-position: top center;}
+
+.kt_collection td.sort_on {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+.kt_collection .folder_row.odd td {
+    background-color: #ededed;
+}
+
+.kt_collection .folder_row td {
+    background-color: #e5e5e5;
+}
+
+.kt_collection .folder_row td.sort_on {
+    background-color: #dbdbdb;
+}
+
+.kt_collection .folder_row.odd td.sort_on {
+    background-color: #e8e8e8;
+}
+
+
+.kt_collection .odd td {
+    background-color: #fafafa;
+}
+
+/* cheap and nasty hack for gmail-style highlighting. */
+.kt_collection tr.activated td.sort_on,
+.kt_collection tr.activated td {
+    background-color: #fff2b8;
+}
+
+.kt_collection .odd td.sort_on {
+    background-color: #f0f0f0;
+}
+
+.kt_collection tfoot td {
+    border-top: 1px solid #ccc;
+}
+
+.kt_collection .batchCurrent {
+    font-weight: bold;
+}
+
+.kt_collection .collectionNavigation {
+}
+
+.ktInlineError {
+    color: #db9d09;
+}
+
+/* block level. */
+.ktError {
+    padding: 0.1em 1em 1em 1em;
+    margin: 0 0 1em 0.5em;
+}
+
+.ktError .err_list {
+    background: #ffdd80;
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
+
+.ktError .err_item {
+    padding-left: 25px;
+    background: #ffdd80 url(../../thirdparty/icon-theme/16x16/status/dialog-warning.png) top left no-repeat;
+    padding-bottom: 3px;
+}
+
+/* block level. */
+.ktInfo {
+    padding: 0.1em 1em 2em 1em;
+    margin: 0 0 1em 0.5em;
+}
+
+
+.ktInfo .info_list {
+    background: #DEDEDE;
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
+
+.ktInfo .info_item {
+    padding-left: 25px;
+    background: #DEDEDE url(../../thirdparty/icon-theme/16x16/status/dialog-information.png) top left no-repeat;
+    padding-bottom: 3px;
+}
+
+.ktBlock {
+	position: relative;
+    padding: 0.1em 1em;
+    margin: 0 0 1em 0.5em;
+    z-index:0; /*Added to accomadate pageBody background change*/
+}
+
+
+.ktInfo, .ktError {
+	position: relative;
+    z-index:0; /*Added to accomadate pageBody background change*/
+}
+
+#dashboardBox {
+    width: 80%
+}
+
+/** portlet stuff. */
+#portlet-search-text {
+    border: 1px solid black;
+    background: white url(../../resources/graphics/search-button.png) center left no-repeat;
+    margin: 0.5em;
+    padding: 3px;
+    padding-left: 17px;
+    width: 11em;
+}
+
+#dashlet-search-text {
+    border: 1px solid black;
+    background: white url(../../resources/graphics/search-button.png) center left no-repeat;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 3px;
+    padding-left: 17px;
+    width: 80%;
+}
+
+.searchbutton {
+    border: 1px solid black;
+    margin: 0.5em;
+}
+
+.outerContainer{
+	height: 450px;
+	overflow: auto;
+    margin-bottom: 20px;
+}
+
+/* ========== kt actions
+
+These are used to mark up various different "actions" (e.g. cut, copy, delete).
+Use them as follows:
+
+<a class="ktAction ktDelete">Delete</a>
+
+The text will be hidden for screen view.  The generic fahrner-ish approach comes from Plone
+
+*/
+
+
+.ktAction {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border: 0 !important;
+    margin: 1px;
+    padding: 0;
+    padding-top: 16px;
+    height: 0px !important;
+    height /**/: 16px;
+    width: 16px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.ktActionDescribed {
+    float: left;
+    margin-right: 0.5em;
+}
+
+
+.ktActionLink {
+    padding-left: 25px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.ktAction.ktInline {
+    float: left;
+    padding-right: 0.5em;
+    background-position: top left;
+}
+
+.ktHelp {
+    background: transparent url(../../thirdparty/icon-theme/16x16/apps/help-browser.png) top left no-repeat;
+    float: right;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border: 0 !important;
+    padding: 0;
+    padding-top: 16px;
+    height: 0px !important;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+/* FIXME when available icon-naming-conformant sets have better coverage, make these more accurate. */
+.ktActionLink.ktDelete, .ktAction.ktDelete { background-image: url(../../resources/graphics/delete.png); }
+.ktActionLink.ktEdit, .ktAction.ktEdit { background-image: url(../../thirdparty/icon-theme/16x16/actions/document-properties.png); }
+.ktActionLink.ktAddUser, .ktAction.ktAddUser { background-image: url(../../thirdparty/icon-theme/16x16/actions/contact-new.png); }
+.ktActionLink.ktAddGroup, .ktAction.ktAddGroup { background-image: url(../../thirdparty/icon-theme/16x16/actions/group-new.png); }
+.ktActionLink.ktAdd, .ktAction.ktAdd { background-image: url(../../thirdparty/icon-theme/16x16/actions/add.png); }
+.ktActionLink.ktDownload, .ktAction.ktDownload { background-image: url(../../resources/graphics/download.png); }
+.ktActionLink.ktBack, .ktAction.ktBack { background-image: url(../../thirdparty/icon-theme/16x16/actions/back.png); }
+.ktActionLink.ktAllowed, .ktAction.ktAllowed { background-image: url(../../resources/graphics/allowed.png); }
+.ktActionLink.ktDenied, .ktAction.ktDenied { background-image: url(../../resources/graphics/denied.png); }
+.ktActionLink.ktMoveUp, .ktAction.ktMoveUp { background-image: url(../../thirdparty/icon-theme/16x16/actions/move-up.png); }
+.ktActionLink.ktMoveDown, .ktAction.ktMoveDown { background-image: url(../../thirdparty/icon-theme/16x16/actions/move-down.png); }
+.ktActionLink.ktPreview, .ktAction.ktPreview { background-image: url(../../resources/tango-icons/system-search.png); }
+
+/* this is sometimes used separately to get the auto-delete help. */
+.ktDelete { }
+
+
+
+/* upload / download buttons */
+
+.portlet_button {
+    padding: 2px;
+    padding-bottom: 0;
+    height: 40px;
+}
+
+.portlet_button a .btn_text {
+    color: #F8A00C;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+
+
+.portlet_button a:hover .btn_text {
+    color: #F8B01C;
+}
+
+
+#portletbar .portlet .portlet_button a:hover {
+    color: #FFAA00;
+    border: 0px;
+    text-decoration: none;
+}
+
+.portlet_button a .big_btn_left {
+    background: transparent url(../../resources/graphics/btn_left.gif) top left no-repeat;
+    width: 10px;
+    height: 47px;
+    float: left;
+}
+
+.portlet_button a .big_btn_middle {
+    background: transparent url(../../resources/graphics/btn_middle.gif) repeat-x;
+    height: 47px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    align: center;
+    width: 80%;
+}
+
+.portlet_button a .big_btn_right {
+    float: left;
+    width: 25px;
+    height: 47px;
+}
+
+.portlet_button a .arrow_upload{
+    background: transparent url(../../resources/graphics/btn_right_up.gif) top right no-repeat;
+}
+
+.portlet_button a .arrow_download{
+    background: transparent url(../../resources/graphics/btn_right_down.gif) top right no-repeat;
+}
+
+.portlet_button a:hover .big_btn_left {
+    background: transparent url(../../resources/graphics/btn_left_ro.gif) top left no-repeat;
+}
+
+.portlet_button a:hover .big_btn_middle {
+    background: transparent url(../../resources/graphics/btn_middle_ro.gif) repeat-x;
+}
+
+.portlet_button a:hover .arrow_upload {
+    background: transparent url(../../resources/graphics/btn_right_ro_up.gif) top right no-repeat;
+}
+
+.portlet_button a:hover .arrow_download {
+    background: transparent url(../../resources/graphics/btn_right_ro_down.gif) top right no-repeat;
+}
+
+
+/* =========== standard listings. */
+
+
+
+.listing td {
+   padding: 0.5em;
+   vertical-align: top;
+}
+
+.listing thead th {
+   border-bottom: 1px solid #888;
+   text-align: left;
+   padding-right: 2em;
+}
+
+
+/* dashboard blocks. */
+
+#dashboard-container-left {
+    clear: left;
+    width: 47%;
+    margin-top: 0;
+    margin-left: 0;
+    padding-right: 3em;
+    float: left;
+    padding-bottom: 2em;
+    height: 100%;
+    min-height: 5em;
+/*     background-color: #dfd; */
+}
+
+#dashboard-container-right {
+    width: 47%;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+    padding-bottom: 2em;
+    height: 100%;
+    min-height: 5em;
+/*     background-color: #ddf; */
+}
+
+.dashboard_block_topleft {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    left: 0px;
+    background: url(../graphics/dashlet_topleft.png) top left no-repeat;
+    z-index:-1;
+}
+
+.dashboard_block_toprepeat {
+    position: absolute;
+    width: 90%;
+    height: 36px;
+    top: 0px;
+    left: 30px;
+    background: white url(../graphics/dashlet_toprepeat.png) top left repeat-x;
+    z-index:-1;
+}
+
+.dashboard_block_topright {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    right: 0px;
+    background: url(../graphics/dashlet_topright.png) top right no-repeat;
+    z-index:-1;
+}
+
+.dashboard_block_leftrepeat_top {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    top: 5px;
+    left: 0px;
+    background: white url(../graphics/dashlet_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.dashboard_block_leftrepeat_bottom {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    bottom: 10px;
+    left: 0px;
+    background: white url(../graphics/dashlet_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.dashboard_block_bottomleft {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0px;
+    left: 0px;
+    background: url(../graphics/dashlet_bottomleft.png) bottom left no-repeat;
+    z-index:-1;
+}
+
+.dashboard_block_bottomrepeat {
+    position: absolute;
+    width: 92%;
+    height: 13px;
+    bottom: 0px;
+    left: 30px;
+    background: white url(../graphics/dashlet_bottomrepeat.png) bottom left repeat-x;
+    z-index:-1;
+}
+
+.dashboard_block_bottomright {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0px;
+    right: 0px;
+    background: url(../graphics/dashlet_bottomright.png) bottom right no-repeat;
+    z-index:-1;
+}
+
+.dashboard_block_rightrepeat_top {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    top: 5px;
+    right: 0px;
+    background: white url(../graphics/dashlet_rightrepeat.png) top right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.dashboard_block_rightrepeat_bottom {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    bottom: 10px;
+    right: 0px;
+    background: white url(../graphics/dashlet_rightrepeat.png) bottom right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.dashboard_block_rightrepeat_top {
+    min-height: 70px;
+}
+
+.dashboard_block.rolled-up .dashboard_block_rightrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .dashboard_block_rightrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .dashboard_block_leftrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .dashboard_block_leftrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block {
+    width: 100%;
+}
+
+.dashboard_block_empty{
+	border:none;
+}
+
+.error_dashlet_topleft {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    left: 0px;
+    background: url(../graphics/error_topleft.png) top left no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_topleft_small {
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    top: 0px;
+    left: 0px;
+    background: url(../graphics/error_topleft_small.png) top left no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_toprepeat {
+    position: absolute;
+    width: 95%;
+    height: 55px;
+    top: 0px;
+    left: 13px;
+    background: #ffdd80 url(../graphics/error_toprepeat.png) top left repeat-x;
+    z-index:-1;
+}
+
+.error_dashlet_toprepeat_small {
+    position: absolute;
+    width: 97%;
+    height: 21px;
+    top: 0px;
+    left: 13px;
+    background: #ffdd80 url(../graphics/error_toprepeat.png) bottom left repeat-x;
+    z-index:-1;
+    border-top: 1px solid #FFC21E;
+}
+
+.error_dashlet_topright {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    right: 0px;
+    background: url(../graphics/error_topright.png) top right no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_topright_small {
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    top: 0px;
+    right: 0px;
+    background: url(../graphics/error_topright_small.png) top right no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_leftrepeat_top {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    top: 5px;
+    left: 0px;
+    background: #ffdd80 url(../graphics/error_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.error_dashlet_leftrepeat_bottom {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    bottom: 10px;
+    left: 0px;
+    background: #ffdd80 url(../graphics/error_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.error_dashlet_bottomleft {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    bottom: 0px;
+    left: 0px;
+    background: url(../graphics/error_bottomleft.png) bottom left no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_bottomrepeat {
+    position: absolute;
+    width: 95%;
+    height: 30px;
+    bottom: 0px;
+    left: 10x;
+    background: #ffdd80 url(../graphics/error_bottomrepeat.png) bottom left repeat-x;
+    z-index:-1;
+}
+
+.error_dashlet_bottomrepeat_small {
+    position: absolute;
+    width: 97%;
+    height: 30px;
+    bottom: 0px;
+    left: 10x;
+    background: #ffdd80 url(../graphics/error_bottomrepeat.png) bottom left repeat-x;
+    z-index:-1;
+}
+
+.error_dashlet_bottomright {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0px;
+    right: 0px;
+    background: url(../graphics/error_bottomright.png) bottom right no-repeat;
+    z-index:-1;
+}
+
+.error_dashlet_rightrepeat_top {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    top: 5px;
+    right: 0px;
+    background: #ffdd80 url(../graphics/error_rightrepeat.png) top right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.error_dashlet_rightrepeat_top_small {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    top: 5px;
+    right: 0px;
+    background: #ffdd80 url(../graphics/error_rightrepeat.png) top right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.error_dashlet_rightrepeat_bottom {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    bottom: 10px;
+    right: 0px;
+    background: #ffdd80 url(../graphics/error_rightrepeat.png) bottom right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.error_dashlet_rightrepeat_top {
+    min-height: 70px;
+}
+
+.error_dashlet_rightrepeat_top_small {
+    min-height: 20px;
+}
+
+.dashboard_block.rolled-up .error_dashlet_toprepeat
+{
+    height: 38px;
+}
+
+.dashboard_block.rolled-up .error_dashlet_bottomrepeat
+{
+    height: 20px;
+}
+
+.dashboard_block.rolled-up .error_dashlet_rightrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .error_dashlet_rightrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .error_dashlet_leftrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .error_dashlet_leftrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .error_dashlet_bottomleft {
+    background: url(../graphics/error_bottomleft_rolledup.png) bottom left no-repeat;
+}
+
+.dashboard_block.rolled-up .error_dashlet_bottomright {
+	background: url(../graphics/error_bottomright_rolledup.png) bottom right no-repeat;
+}
+
+.info_dashlet_topleft {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    left: 0px;
+    background: url(../graphics/info_topleft.png) top left no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_topleft_small {
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    top: 0px;
+    left: 0px;
+    background: url(../graphics/info_topleft_small.png) top left no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_toprepeat {
+    position: absolute;
+    width: 95%;
+    height: 55px;
+    top: 0px;
+    left: 13px;
+    background: #DEDEDE url(../graphics/info_toprepeat.png) top left repeat-x;
+    z-index:-1;
+}
+
+.info_dashlet_toprepeat_small {
+    position: absolute;
+    width: 97%;
+    height: 21px;
+    top: 0px;
+    left: 13px;
+    background: #DEDEDE url(../graphics/info_toprepeat.png) bottom left repeat-x;
+    z-index:-1;
+    border-top: 1px solid #C5C5C5;
+}
+
+.info_dashlet_topright {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0px;
+    right: 0px;
+    background: url(../graphics/info_topright.png) top right no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_topright_small {
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    top: 0px;
+    right: 0px;
+    background: url(../graphics/info_topright_small.png) top right no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_leftrepeat_top {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    top: 5px;
+    left: 0px;
+    background: #DEDEDE url(../graphics/info_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.info_dashlet_leftrepeat_bottom {
+    position: absolute;
+    width: 13px;
+    height: 50%;
+    bottom: 10px;
+    left: 0px;
+    background: #DEDEDE url(../graphics/info_leftrepeat.png) top left repeat-y;
+    z-index:-1;
+}
+
+.info_dashlet_bottomleft {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    bottom: 0px;
+    left: 0px;
+    background: url(../graphics/info_bottomleft.png) bottom left no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_bottomrepeat {
+    position: absolute;
+    width: 95%;
+    height: 30px;
+    bottom: 0px;
+    left: 10x;
+    background: #DEDEDE url(../graphics/info_bottomrepeat.png) bottom left repeat-x;
+    z-index:-1;
+}
+
+.info_dashlet_bottomrepeat_small {
+    position: absolute;
+    width: 97%;
+    height: 30px;
+    bottom: 0px;
+    left: 10x;
+    background: #DEDEDE url(../graphics/info_bottomrepeat.png) bottom left repeat-x;
+    z-index:-1;
+}
+
+.info_dashlet_bottomright {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0px;
+    right: 0px;
+    background: url(../graphics/info_bottomright.png) bottom right no-repeat;
+    z-index:-1;
+}
+
+.info_dashlet_rightrepeat_top {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    top: 5px;
+    right: 0px;
+    background: #DEDEDE url(../graphics/info_rightrepeat.png) top right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.info_dashlet_rightrepeat_top_small {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    top: 5px;
+    right: 0px;
+    background: #DEDEDE url(../graphics/info_rightrepeat.png) top right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.info_dashlet_rightrepeat_bottom {
+    position: absolute;
+    width: 30px;
+    height: 50%;
+    bottom: 10px;
+    right: 0px;
+    background: #DEDEDE url(../graphics/info_rightrepeat.png) bottom right repeat-y;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.info_dashlet_rightrepeat_top {
+    min-height: 70px;
+}
+
+.info_dashlet_rightrepeat_top_small {
+    min-height: 20px;
+}
+
+.dashboard_block.rolled-up .info_dashlet_toprepeat
+{
+    height: 38px;
+}
+
+.dashboard_block.rolled-up .info_dashlet_bottomrepeat
+{
+    height: 20px;
+}
+
+.dashboard_block.rolled-up .info_dashlet_rightrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .info_dashlet_rightrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .info_dashlet_leftrepeat_top
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .info_dashlet_leftrepeat_bottom
+{
+    display: none;
+}
+
+.dashboard_block.rolled-up .info_dashlet_bottomleft
+{
+	background: url(../graphics/info_bottomleft_rolledup.png) bottom left no-repeat;
+}
+
+.dashboard_block.rolled-up .info_dashlet_bottomright
+{
+	background: url(../graphics/info_bottomright_rolledup.png) bottom right no-repeat;
+}
+
+#copyrightbarBorder {
+    /*margin-top: 40px;
+    margin-bottom: 50px;*/
+    border: 1px solid #BBBBBB;
+    background-color: #D1D1D1;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #888;
+}
+
+#support-block {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #666;
+}
+
+/* -------------- extra info for the "views" column on doc ---------------------- */
+
+#document-views {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 19em;
+    z-index: 2;
+}
+
+#document-views .viewlet {
+    margin: 0 2em 1.5em 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 0 0 0.5em;
+}
+
+#document-views .viewlet h3 {
+    margin: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    text-align: left;
+    color: #333;
+    font-size: small;
+}
+
+#document-views .downloadbox {
+    padding: 0.5em;
+    border: 1px transparent;
+    margin-bottom: 1em;
+}
+
+#document-views .downloadbox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#document-views .downloadbox ul li {
+    padding-left: 25px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+
+#document-views .viewlet .actionlist
+{
+    list-style: none;
+    padding: 0; margin: 0; border: 0;
+    font-size: small;
+}
+
+#document-views .viewlet .actionlist li
+{
+    display: block;
+    padding: 0 0 0 10px;
+    margin: 0.5em 0.5em 0.15em 0;
+    text-align: left;
+    background: transparent url(../graphics/leftbullet.png) center left no-repeat;
+    border: 0;
+}
+
+#document-views .downloadbox ul li.view_details {
+    background-image: url(../graphics/info.png);
+}
+
+
+#document-views .downloadbox ul li.download {
+    background-image: url(../graphics/download.png);
+}
+
+#document-views .downloadbox ul li.checkout {
+    background-image: url(../graphics/checkout.png);
+}
+
+#document-views .downloadbox ul li.checkin {
+    background-image: url(../graphics/checkin.png);
+}
+
+#document-views .downloadbox ul li.cancel_checkout {
+    background-image: url(../graphics/cancel_checkout.png);
+}
+
+
+#document-views .downloadbox ul li.edit_metadata {
+    background-image: url(../graphics/edit_metadata.png);
+}
+
+#content ul {
+    list-style-image: url(../graphics/bullet.png);
+    padding-left: 15px;
+}
+
+
+/* -------------------------- general collapsable blocks ------------------------ */
+
+.collapsible
+{
+    margin: 0 0 1.5em 0;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 0 0 0 0;
+}
+
+.collapsible .collapsiblebody {
+    padding: 0 0 0.5em 0;
+}
+
+.collapsible.expanded
+{
+    margin: 0 0 1.5em 0;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0 0 0.5em;
+}
+
+.collapsible h4:hover {
+    text-decoration: underline;
+}
+
+.collapsible h4
+{
+    margin: 0;
+    border-width: 0 0 1px 0;
+    border-style: none;
+    border-color: #eee;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 25px;
+    background: url(../graphics/plus.gif) 10px 50% no-repeat;
+    text-align: left;
+    color: #333;
+    font-size: small;
+}
+
+
+.collapsible.expanded h4
+{
+    margin: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 25px;
+    text-align: left;
+    background: url(../graphics/minus.gif) 10px 50% no-repeat;
+    color: #333;
+    font-size: small;
+}
+
+.collapsible .collapsiblebody {
+    display: none;
+}
+
+.collapsible.expanded .collapsiblebody {
+    display: block;
+}
+
+.collapse
+{
+    padding-left: 20px;
+    border: 0px;
+    background: url(../graphics/plus.gif) no-repeat;
+}
+
+
+.expand
+{
+    padding-left: 20px;
+    border: 0px;
+    background: url(../graphics/minus.gif) no-repeat;
+}
+
+
+
+/* -------------------------- iframe browse ------------------------ */
+.browse-frame {
+    width: 100%;
+    height: 55em;
+    border-width: 0px;
+    padding:0;
+    margin: 0;
+}
+
+.browse_body {
+    padding: 0;
+}
+
+/* -------------------------- dashboard ------------------------ */
+
+.dashboard_block_icons
+{
+    position: absolute;
+	top: 0px;
+	right: 10px;
+    text-align: right;
+    margin: 0.2em 0em 0 0;
+}
+
+.dashboard_block_handle
+{
+    cursor: pointer;
+    margin: 0.2em -0.5em 0.5em 0;
+    font-size:small;
+}
+
+.dashboard_block.rolled-up .dashboard_block_body
+{
+    display: none;
+}
+
+.ktBlock .dashboard_block_body
+{
+    z-index:99;
+    margin: 8px 0 10px 0;
+    background-color:#FFFFFF;
+    overflow: auto;
+}
+
+.ktError .dashboard_block_body
+{
+    z-index:99;
+    margin: 0;
+    background-color: #ffdd80;
+    overflow: auto;
+}
+
+.ktInfo .dashboard_block_body
+{
+    z-index:99;
+    margin: 0;
+    background-color: #DEDEDE;
+    overflow: auto;
+}
+
+.dashboard_block .dashboard_block_body  .edit_action
+{
+    z-index:99;
+    background-color:#FFFFFF;
+}
+
+/* actions */
+
+#content .dashboard_block .action
+{
+    padding: 1em 0.5em;
+    border-bottom-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#content .dashboard_block .action:hover
+{
+    border-bottom-width: 0px;
+}
+
+#content .dashboard_block .action_rollup
+{
+    background-image: url(../graphics/bullet_toggle_minus.png);
+}
+
+#content .dashboard_block.rolled-up .action_rollup
+{
+    background-image: url(../graphics/bullet_toggle_plus.png);
+}
+
+#content .dashboard_block .action_close
+{
+    background-image: url(../graphics/bullet_toggle_close.png);
+}
+
+/* action effects */
+#content .dashboard_block.rolled-up h2
+{
+    border-bottom-width: 0px;
+    padding-bottom: 10px;
+}
+
+#content .ktBlock h2
+{
+    border-bottom-width: 0px;
+    color: #FFFFFF;
+    font-size: small;
+}
+
+#content .dashboard_block.closed
+{
+    display: none;
+}
+
+.addDialogScreen
+{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+/*    background-color: white;
+    opacity: 0.5; */
+    text-align: center;
+    z-index: 1000;
+}
+
+.addDialog
+{
+    display: block;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 2em;
+    margin: 10% 30%;
+    opacity: 1;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.addDialog .dashletLink
+{
+    color: #666;
+    text-decoration: none;
+    display: block;
+}
+
+body #content #add_dashlet
+{
+    display: none;
+    text-decoration: none;
+    border-width: 0px;
+
+}
+
+#add_dashlet
+{
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+    color: #333;
+    font-weight: normal;
+    float: right;
+    margin-right: 3em;
+}
+
+/*contenttype_href class style is used to stop underline error on a hyperlink in IE*/
+.contenttype_href
+{
+	margin-right: 25px;
+}
+
+.workflow_step2
+{
+	overflow:scroll;
+
+}
+
+.role_allocation
+{
+	overflow:auto;
+
+}
+
+.kt_config
+{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.kt_config td {
+    padding: 0.25em 0.5em;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.kt_config th{
+
+	border-bottom:1px solid #888888;
+	padding: 0.5em 0.5em;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+/* ================= Search widget - override ExtJS CSS ================= */
+
+.x-toolbar{
+    border: none;
+    display: block;
+	padding: 0 15px 0 15px;
+    background: transparent;
+    position: relative;
+    zoom: 1;
+}
+
+.x-btn {
+	padding: 2px;
+}
+
+.x-toolbar .x-btn-left{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 0;
+}
+
+.x-toolbar .x-btn-right{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 -21px;
+}
+.x-toolbar .x-btn-center{
+	background: url(../graphics/tb_search_btn.gif) repeat-x 0 -42px;
+}
+
+.x-toolbar .x-btn-over .x-btn-left{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 0;
+}
+.x-toolbar .x-btn-over .x-btn-right{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 -21px;
+}
+.x-toolbar .x-btn-over .x-btn-center{
+	background: url(../graphics/tb_search_btn.gif) repeat-x 0 -42px;
+}
+
+.x-toolbar .x-btn-click .x-btn-left, .x-toolbar .x-btn-pressed .x-btn-left, .x-toolbar .x-btn-menu-active .x-btn-left{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 -63px;
+}
+.x-toolbar .x-btn-click .x-btn-right, .x-toolbar .x-btn-pressed .x-btn-right, .x-toolbar .x-btn-menu-active .x-btn-right{
+	background: url(../graphics/tb_search_btn.gif) no-repeat 0 -84px;
+}
+
+.x-toolbar .x-btn-click .x-btn-center, .x-toolbar .x-btn-pressed .x-btn-center, .x-toolbar .x-btn-menu-active .x-btn-center{
+	background: url(../graphics/tb_search_btn.gif) repeat-x 0 -105px;
+}
+
+.x-menu {
+	border: 1px solid #718bb7;
+	z-index: 15000;
+	zoom: 1;
+	background: #FDFDFD;
+	padding: 2px;
+}
+
+
+/* ================= Ajax popup - override ExtJS CSS ================= */
+
+#popup_content {
+    background: #FFF;
+    color: #000;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+#popup_content h2 {
+    font-size: 110%;
+    margin-bottom: 5px;
+}
+
+#popup_content .warning {
+    padding-left: 20px;
+    background: url(../../thirdparty/icon-theme/16x16/status/dialog-warning.gif) center left no-repeat;
+}
+
+#popup_content .input_field {
+    margin-bottom: 10px;
+}
+
+#popup_content .required {
+    margin-left: 0.5em;
+    padding-left: 10px;
+    color: white;
+    background: transparent url(../graphics/required.png) center left no-repeat;
+}
+
+#popup_content .descriptiveText {
+    color: #666;
+}
+
+#popup_content .form_actions a {
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+    color: #333;
+    font-weight: normal;
+    padding: 2px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+#popup_content .error {
+    padding: 0.5em 1em;
+    border: 1px solid #ffc21e;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+#popup_content .error {
+    background: #ffdd80  url(../../resources/graphics/denied.gif) 2px center no-repeat;
+}
+
+.x-window-tl .x-window-header {
+    color: #FFF;
+}
+
+.x-window-tc {
+	background: url(../graphics/portlet_bg.png) repeat-x 0 0;
+	overflow:hidden;
+    zoom:1;
+}
+
+.x-window-tl {
+	background: url(../graphics/portlet_corner_topleft.png) no-repeat 0 0;
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+
+.x-window-tr {
+	background: url(../graphics/portlet_corner_topright_2.png) no-repeat right 0;
+	padding-right:6px;
+}
+
+.x-window-bc {
+	background: #FFF;
+    zoom:1;
+}
+.x-window-bl {
+    border-left:1px solid #AFAFAF;
+    border-bottom:1px solid #AFAFAF;
+	background:  #FFF;
+	padding-left:6px;
+    zoom:1;
+}
+.x-window-br {
+    border-right:1px solid #AFAFAF;
+	background:  #FFF;
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-window-ml {
+    border-left:1px solid #AFAFAF;
+	background:  #FFF;
+	padding-left:6px;
+    zoom:1;
+}
+.x-window-mr {
+    border-right:1px solid #AFAFAF;
+	background:  #FFF;
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-window-mc {
+    border:1px solid #FFF;
+    border-top:1px solid #FFF;
+    padding:0;
+    margin:0;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background:#FFF;
+}
+
+.x-window-body {
+    border-left:1px solid #FFF;
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #FFF;
+    background: transparent;
+    overflow: auto;
+}
