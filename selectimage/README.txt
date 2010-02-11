@@ -1,4 +1,17 @@
-jQuery selectImage Usage:
+jQuery selectImage 
+
+Description:
+This plugin enables a standard list of images to become selectable components
+capable of being submitted to the server.
+
+Features:
+ - Select and Highlight an image who's attributes including src gets submitted to the server.
+
+TODO:
+ - Enable single clickthrough directly on image to submit.
+ - Add style and layout options.
+
+Usage:
 
 1. Simply put all your image tags in a div container with an id like:
     <div id="selectimage">
