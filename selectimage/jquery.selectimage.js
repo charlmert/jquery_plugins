@@ -58,7 +58,6 @@ jQuery.fn.selectImage = function() {
       if (this.id == '') {
         this.id = 'select_image_img_' + custId;
         custId++;
-        window.console.log(this.id);
       }
 
       var toggle = 1;
@@ -68,7 +67,6 @@ jQuery.fn.selectImage = function() {
           jQuery('#' + passBackNamespace + '_alt').val(this.alt);
           jQuery('#' + passBackNamespace + '_title').val(this.title);
 
-          window.console.log(this.alt);
           //Resetting background:
           jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + background_color);
           jQuery('#' + this.id).css('border', '10px solid ' + click);

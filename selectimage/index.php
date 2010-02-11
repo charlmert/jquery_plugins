@@ -45,7 +45,6 @@
 
     <script type="text/javascript">
       jQuery(document).ready(function(){
-        //window.console.log("Hallooo");
         jQuery('#selectimage_anime').selectImage();
       });
     </script>
@@ -58,7 +57,7 @@
         <div id="bodyPad">
             <div id="logobar">
             	                	<a href="http://www.knowledgetree.com"><img src="resources/graphics/ktlogo-topbar-right.png" class="primary" title="KnowledgeTree"/></a>
-                                                	<a href="http://www.google.com"><img src="resources/jquery_image_select.jpg" height="50px" width="313px" alt="cool beans!" title="cool beans!" class="secondary" /></a>
+                                                	<a href="http://www.google.com"><img src="resources/selectimage-logo.png" height="50px" width="313px" alt="cool beans!" title="cool beans!" class="secondary" /></a>
                                 <div class="floatClear"></div>
             </div>
             			<div id="navbarBorder">
@@ -183,76 +182,81 @@ if ($img_src != '') {
                         <table class="kt_collection" cellspacing="0" name="browseForm">
                             <tr>
                                 <td>
+                                    <p class="descriptiveText">
+                                      1. Select an image by clicking on it. <br/>
+                                      2. Click the "Select Image" button to see it submit the image to the form.
+                                    </p>
                                     <input type="submit" name="submit" value="Select Image" style="margin:10px 10px 0px 10px;"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div id="selectimage_anime" style="width:600px;clear:right;display:block">
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/warofgenesis_1_1024.jpg" alt="War Of Genisis 1" title="War Of Genisis 1">
-                                        <img src="anime/warofgenesis_12_1024.jpg">
-                                        <img src="anime/warofgenesis_13_1024.jpg">
-                                        <img src="anime/warofgenesis_14_1024.jpg">
-                                        <img src="anime/warofgenesis_16_1024.jpg">
-                                        <img src="anime/warofgenesis_17_1024.jpg">
-                                        </div>
+<div id="selectimage_anime" style="width:600px;clear:right;display:block">
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/warofgenesis_18_1024.jpg">
-                                        <img src="anime/warofgenesis_2_1024.jpg">
-                                        <img src="anime/warofgenesis_23_1024.jpg">
-                                        <img src="anime/warofgenesis_28_1024.jpg">
-                                        <img src="anime/warofgenesis_30_1024.jpg">
-                                        <img src="anime/warofgenesis_3_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/warofgenesis_12_1024.jpg" title="anime/warofgenesis_12_1024.jpg" alt="anime/warofgenesis_12_1024.jpg">
+  <img src="anime/warofgenesis_13_1024.jpg" title="anime/warofgenesis_13_1024.jpg" alt="anime/warofgenesis_13_1024.jpg">
+  <img src="anime/warofgenesis_14_1024.jpg" title="anime/warofgenesis_14_1024.jpg" alt="anime/warofgenesis_14_1024.jpg">
+  <img src="anime/warofgenesis_16_1024.jpg" title="anime/warofgenesis_16_1024.jpg" alt="anime/warofgenesis_16_1024.jpg">
+  <img src="anime/warofgenesis_17_1024.jpg" title="anime/warofgenesis_17_1024.jpg" alt="anime/warofgenesis_17_1024.jpg">
+  <img src="anime/warofgenesis_1_1024.jpg" title="anime/warofgenesis_1_1024.jpg" alt="anime/warofgenesis_1_1024.jpg">
+  </div>
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/noir_6_1024.jpg">
-                                        <img src="anime/scryed_3_1024.jpg">
-                                        <img src="anime/scryed_4_1024.jpg">
-                                        <img src="anime/scryed_7_1024.jpg">
-                                        <img src="anime/transformers_2_1024.jpg">
-                                        <img src="anime/trigun_26_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/warofgenesis_18_1024.jpg" title="anime/warofgenesis_18_1024.jpg" alt="anime/warofgenesis_18_1024.jpg">
+  <img src="anime/warofgenesis_2_1024.jpg" title="anime/warofgenesis_2_1024.jpg" alt="anime/warofgenesis_2_1024.jpg">
+  <img src="anime/warofgenesis_23_1024.jpg" title="anime/warofgenesis_23_1024.jpg" alt="anime/warofgenesis_23_1024.jpg">
+  <img src="anime/warofgenesis_28_1024.jpg" title="anime/warofgenesis_28_1024.jpg" alt="anime/warofgenesis_28_1024.jpg">
+  <img src="anime/warofgenesis_30_1024.jpg" title="anime/warofgenesis_30_1024.jpg" alt="anime/warofgenesis_30_1024.jpg">
+  <img src="anime/warofgenesis_3_1024.jpg" title="anime/warofgenesis_3_1024.jpg" alt="anime/warofgenesis_3_1024.jpg">
+  </div>
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/warofgenesis_35_1024.jpg">
-                                        <img src="anime/warofgenesis_4_1024.jpg">
-                                        <img src="anime/warofgenesis_46_1024.jpg">
-                                        <img src="anime/warofgenesis_5_1024.jpg">
-                                        <img src="anime/warofgenesis_54_1024.jpg">
-                                        <img src="anime/warofgenesis_6_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/noir_6_1024.jpg" title="anime/noir_6_1024.jpg" alt="anime/noir_6_1024.jpg">
+  <img src="anime/scryed_3_1024.jpg" title="anime/scryed_3_1024.jpg" alt="anime/scryed_3_1024.jpg">
+  <img src="anime/scryed_4_1024.jpg" title="anime/scryed_4_1024.jpg" alt="anime/scryed_4_1024.jpg">
+  <img src="anime/scryed_7_1024.jpg" title="anime/scryed_7_1024.jpg" alt="anime/scryed_7_1024.jpg">
+  <img src="anime/transformers_2_1024.jpg" title="anime/transformers_2_1024.jpg" alt="anime/transformers_2_1024.jpg">
+  <img src="anime/trigun_26_1024.jpg" title="anime/trigun_26_1024.jpg" alt="anime/trigun_26_1024.jpg">
+  </div>
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/warofgenesis_7_1024.jpg">
-                                        <img src="anime/warofgenesis_9_1024.jpg">
-                                        <img src="anime/x_1_1024.jpg">
-                                        <img src="anime/itachi.jpg">
-                                        <img src="anime/naruto_2_1024.jpg">
-                                        <img src="anime/naruto_23_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/warofgenesis_35_1024.jpg" title="anime/warofgenesis_35_1024.jpg" alt="anime/warofgenesis_35_1024.jpg">
+  <img src="anime/warofgenesis_4_1024.jpg" title="anime/warofgenesis_4_1024.jpg" alt="anime/warofgenesis_4_1024.jpg">
+  <img src="anime/warofgenesis_46_1024.jpg" title="anime/warofgenesis_46_1024.jpg" alt="anime/warofgenesis_46_1024.jpg">
+  <img src="anime/warofgenesis_5_1024.jpg" title="anime/warofgenesis_5_1024.jpg" alt="anime/warofgenesis_5_1024.jpg">
+  <img src="anime/warofgenesis_54_1024.jpg" title="anime/warofgenesis_54_1024.jpg" alt="anime/warofgenesis_54_1024.jpg">
+  <img src="anime/warofgenesis_6_1024.jpg" title="anime/warofgenesis_6_1024.jpg" alt="anime/warofgenesis_6_1024.jpg">
+  </div>
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/naruto_46_1024.jpg">
-                                        <img src="anime/naruto_49_1024.jpg">
-                                        <img src="anime/naruto_53_1024.jpg">
-                                        <img src="anime/naruto_75_1024.jpg">
-                                        <img src="anime/noir_1_1024.jpg">
-                                        <img src="anime/noir_17_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/warofgenesis_7_1024.jpg" title="anime/warofgenesis_7_1024.jpg" alt="anime/warofgenesis_7_1024.jpg">
+  <img src="anime/warofgenesis_9_1024.jpg" title="anime/warofgenesis_9_1024.jpg" alt="anime/warofgenesis_9_1024.jpg">
+  <img src="anime/x_1_1024.jpg" title="anime/x_1_1024.jpg" alt="anime/x_1_1024.jpg">
+  <img src="anime/itachi.jpg" title="anime/itachi.jpg" alt="anime/itachi.jpg">
+  <img src="anime/naruto_2_1024.jpg" title="anime/naruto_2_1024.jpg" alt="anime/naruto_2_1024.jpg">
+  <img src="anime/naruto_23_1024.jpg" title="anime/naruto_23_1024.jpg" alt="anime/naruto_23_1024.jpg">
+  </div>
 
-                                        <div class="selectimage_row" style="float:left;clear:right">
-                                        <img src="anime/noir_2_1024.jpg">
-                                        <img src="anime/noir_22_1024.jpg">
-                                        <img src="anime/noir_23_1024.jpg">
-                                        <img src="anime/noir_24_1024.jpg">
-                                        <img src="anime/noir_27_1024.jpg">
-                                        <img src="anime/noir_4_1024.jpg">
-                                        </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/naruto_46_1024.jpg" title="anime/naruto_46_1024.jpg" alt="anime/naruto_46_1024.jpg">
+  <img src="anime/naruto_49_1024.jpg" title="anime/naruto_49_1024.jpg" alt="anime/naruto_49_1024.jpg">
+  <img src="anime/naruto_53_1024.jpg" title="anime/naruto_53_1024.jpg" alt="anime/naruto_53_1024.jpg">
+  <img src="anime/naruto_75_1024.jpg" title="anime/naruto_75_1024.jpg" alt="anime/naruto_75_1024.jpg">
+  <img src="anime/noir_1_1024.jpg" title="anime/noir_1_1024.jpg" alt="anime/noir_1_1024.jpg">
+  <img src="anime/noir_17_1024.jpg" title="anime/noir_17_1024.jpg" alt="anime/noir_17_1024.jpg">
+  </div>
 
-                                    </div>
+  <div class="selectimage_row" style="float:left;clear:right">
+  <img src="anime/noir_2_1024.jpg" title="anime/noir_2_1024.jpg" alt="anime/noir_2_1024.jpg">
+  <img src="anime/noir_22_1024.jpg" title="anime/noir_22_1024.jpg" alt="anime/noir_22_1024.jpg">
+  <img src="anime/noir_23_1024.jpg" title="anime/noir_23_1024.jpg" alt="anime/noir_23_1024.jpg">
+  <img src="anime/noir_24_1024.jpg" title="anime/noir_24_1024.jpg" alt="anime/noir_24_1024.jpg">
+  <img src="anime/noir_27_1024.jpg" title="anime/noir_27_1024.jpg" alt="anime/noir_27_1024.jpg">
+  <img src="anime/noir_4_1024.jpg" title="anime/noir_4_1024.jpg" alt="anime/noir_4_1024.jpg">
+  </div>
+
+</div>
     
                                     <p style="clear:right">
                                 
