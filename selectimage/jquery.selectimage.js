@@ -37,21 +37,21 @@
 
 jQuery.fn.selectImage = function() {
   return this.each(function(){
+
+    var opt = jQuery.extend({
+      passBackNamespace : 'selectimage', //TODO: Let plugin detect parent form and produce the hidden inputs. For now the user has to place the predefined hidden inputs onto the form manually.
+      multiselect : false,
+      hover : '#e2e2e2',
+      click : '#f2943a', //Orange
+      background : 'white',
+      selected : ''
+    }, opt);
+
     var containerId = this.id;
     var custId = 0;
 
-    //TODO: Let plugin detect parent form and produce the hidden inputs
-    //For now the user has to place the predefined hidden inputs onto the form manually.
-    var passBackNamespace = 'selectimage';
-
-    var multiselect = false;
-    var hover = '#f9f9f9';
-    var click = '#f2943a'; //Orange
-    var background_color = 'white'; //also set in css
-    var selected = '';
-
     //Setting up border
-    jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + background_color);
+    jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + opt.background);
 
     jQuery('#' + containerId + ' img').each(function(){
       //Assigning custom id's to attach event handlers to
@@ -62,15 +62,30 @@ jQuery.fn.selectImage = function() {
 
       var toggle = 1;
 
+      //Click to select
       jQuery('#' + this.id).click(function(){
-          jQuery('#' + passBackNamespace + '_src').val(this.src);
-          jQuery('#' + passBackNamespace + '_alt').val(this.alt);
-          jQuery('#' + passBackNamespace + '_title').val(this.title);
+          opt.selected = this.id;
+          jQuery('#' + opt.passBackNamespace + '_src').val(this.src);
+          jQuery('#' + opt.passBackNamespace + '_alt').val(this.alt);
+          jQuery('#' + opt.passBackNamespace + '_title').val(this.title);
 
           //Resetting background:
-          jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + background_color);
-          jQuery('#' + this.id).css('border', '10px solid ' + click);
+          jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + opt.background);
+          jQuery('#' + this.id).css('border', '10px solid ' + opt.click);
       })
+
+        //Hover Effect
+        jQuery('#' + this.id).mouseenter(function(){
+          if (this.id != opt.selected) {
+            jQuery('#' + this.id).css('border', '10px solid ' + opt.hover).show("slow");
+          }
+        })
+
+        jQuery('#' + this.id).mouseleave(function(){
+          if (this.id != opt.selected) {
+            jQuery('#' + this.id).css('border', '10px solid ' + opt.background).show("slow");
+          }
+        })
 
     });
   });
