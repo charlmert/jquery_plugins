@@ -1,5 +1,6 @@
 <?PHP
 
+  $img_id = $_POST['selectimage_id'];
   $img_src = $_POST['selectimage_src'];
   $img_alt = $_POST['selectimage_alt'];
   $img_title = $_POST['selectimage_title'];
@@ -146,6 +147,10 @@ if ($img_src != '') {
                           <td colspan="2">Image Attributes:</td>
                         </tr>
                         <tr> 
+                          <td>ID</td>
+                          <td>: <?=$img_id?></td>
+                        </tr>
+                        <tr> 
                           <td>Src</td>
                           <td>: <?=$img_src?></td>
                         </tr>
@@ -192,6 +197,11 @@ if ($img_src != '') {
                             <tr>
                                 <td>
 <div id="selectimage_anime" style="width:600px;clear:right;display:block">
+
+  <input type="hidden" id="selectimage_src" name="selectimage_src" value="">
+  <input type="hidden" id="selectimage_alt" name="selectimage_alt" value="">
+  <input type="hidden" id="selectimage_title" name="selectimage_title" value="">
+  <input type="hidden" id="selectimage_id" name="selectimage_id" value="">
 
   <div class="selectimage_row" style="float:left;clear:right">
   <img src="anime/warofgenesis_12_1024.jpg" title="anime/warofgenesis_12_1024.jpg" alt="anime/warofgenesis_12_1024.jpg">
@@ -257,14 +267,8 @@ if ($img_src != '') {
   </div>
 
 </div>
-    
+
                                     <p style="clear:right">
-                                
-                                    <input type="hidden" id="selectimage_src" name="selectimage_src" value="">
-                                    <input type="hidden" id="selectimage_alt" name="selectimage_alt" value="">
-                                    <input type="hidden" id="selectimage_title" name="selectimage_title" value="">
-                                    <input type="hidden" id="selectimage_name" name="selectimage_name" value="">
-                                    <input type="hidden" id="selectimage_id" name="selectimage_id" value="">
 
                                 </td>
                             </tr>

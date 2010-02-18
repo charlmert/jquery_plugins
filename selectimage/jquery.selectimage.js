@@ -47,6 +47,13 @@ jQuery.fn.selectImage = function() {
       selected : ''
     }, opt);
 
+    //Adding the hidden form elements.
+    /*
+    var parentForm = this.parents("form");
+    var inputStr = '<input type="hidden" id="selectimage_src" name="selectimage_src" value="">  <input type="hidden" id="selectimage_alt" name="selectimage_alt" value="">  <input type="hidden" id="selectimage_title" name="selectimage_title" value="">  <input type="hidden" id="selectimage_name" name="selectimage_name" value="">  <input type="hidden" id="selectimage_id" name="selectimage_id" value="">';
+    parentForm.append(inputStr);
+    */
+
     var containerId = this.id;
     var custId = 0;
 
@@ -68,6 +75,7 @@ jQuery.fn.selectImage = function() {
           jQuery('#' + opt.passBackNamespace + '_src').val(this.src);
           jQuery('#' + opt.passBackNamespace + '_alt').val(this.alt);
           jQuery('#' + opt.passBackNamespace + '_title').val(this.title);
+          jQuery('#' + opt.passBackNamespace + '_id').val(this.id);
 
           //Resetting background:
           jQuery('#' + containerId + ' img'   ).css('border', '10px solid ' + opt.background);
